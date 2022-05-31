@@ -10,12 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "This is a build step"
-
-  test:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - run: echo "This is a test step"
 	  
   odc-backend:
     runs-on: ubuntu-latest
